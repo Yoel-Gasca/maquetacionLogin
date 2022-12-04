@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(../img/fondo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.logo{
+    position: center;
+    width: 100px;
+    height: 100px;
+}
+.container{
+    width: 100px;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.boxLogin{
+    position: center;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: #132192;
+    border-radius: 5px;
+}
+
+.boxLogin div{
+    margin: 50px 40px;
+    color: #ddd;
+    transition: all 500ms;
+}
+
+.boxLogin div p,
+.boxLogin div button{
+    margin-top: 30px;
+}
+
+.boxLogin div h2{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.boxLogin button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.boxLogin button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+/*Estilo de los formularios*/
+.containerLogin{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transform: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.containerLogin form{
+
+    width: 100%;
+    padding: 80px 20px;
+    margin-top: 5px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+    position: center;
+}
+
+.containerLogin h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #132192;
+}
+
+.containerLogin form button{
+    padding: 10px 40px;
+    margin-top: 10px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;   
+    outline: none;
+}
+
+.formLogin{
+    opacity: 1;
+    display: block;
+}
+
+.formRegister{
+    display: none;
+}
+
+/*Diseño responsive*/
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .boxLogin{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .boxLogin div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    /*Formularios*/
+    .containerLogin{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .containerLogin form{
+        position: relative;
+    }
+}
