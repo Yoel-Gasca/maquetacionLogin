@@ -1,2 +1,2 @@
 # maquetacionLogin
-Maquetación de un inicion sesión de usuarios
+Maquetación de un inicio de sesión de usuarios
